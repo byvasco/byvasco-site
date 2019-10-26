@@ -1,37 +1,23 @@
-title: ByVasco – Designer and Developer for the web
-email: madebyvasco@gmail.com
-description:
-baseurl: ""
-url: "https://byvasco.com"
-
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-feed
-
-
-collections_dir: collections
-
+---
+title: ByVasco
+timezone: UTC
 collections:
-  articles:
+  posts:
+    title: Posts
     output: true
-    permalink: /:title
-    sort_by: date
-  
-  pages:
+  uploads:
+    title: Uploads
     output: true
-    permalink: /:title
-  
 defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "articles"
-    values:
-      layout: "article"
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+permalink: pretty
