@@ -1,0 +1,63 @@
+/**
+ * Base
+ * Typography
+ */
+
+// Body
+.body {
+  @include font(18, 32, 0);
+
+  &-long {
+    @extend .body;
+    line-height: 34px;
+  }
+
+  &-large {
+    @include font(22, 40, 0);
+  }
+
+  &-small {
+    @include font(16, 28, 0.04);
+  }
+}
+
+p {
+  @extend .body;
+}
+
+a {
+  &.external {
+    @include flex($align: center);
+
+    &::after {
+      content: '';
+      display: block;
+      @include wh(24px, 24px);
+      @include background('/assets/images/icons/icon-external-link.svg');
+      margin-left: 4px;
+    }
+  }
+
+  &.body-large {
+    font-weight: 500;
+  }
+
+  &:not(.menu-link):hover {
+    color: get-color(accent, primary);
+  }
+}
+
+// Label
+.label {
+  text-transform: uppercase;
+  @include font(10, 12, 1.8, $family: $font-secondary);
+}
+
+// Modifiers
+.-heavy {
+  font-weight: 600;
+}
+
+.-light {
+  color: get-color(text, light);
+}

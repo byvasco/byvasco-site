@@ -1,0 +1,20 @@
+/**
+ * Components / Site
+ * Header
+ */
+
+.header-main {
+  padding: 80px 0;
+
+  .menu-main {
+    justify-self: end;
+  }
+
+  .menu-link {
+    text-decoration: none;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

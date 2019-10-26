@@ -1,0 +1,76 @@
+/**
+ * Base
+ * Mixins
+ */
+
+// Sets background properties
+@mixin background($name: null, $color: null, $posX: center, $posY: center, $size: null, $repeat: no-repeat) {
+  background: url(#{$name}) $color $posX $posY $repeat;
+  background-size: $size;
+}
+
+// Sets all necessary font properties
+@mixin font($size, $line-height, $letter-spacing, $weight: null, $color: null, $family: $font-main) {
+  font-family: $family;
+  font-size: $size + px;
+  line-height: $line-height + px;
+  letter-spacing: $letter-spacing + px;
+  font-weight: $weight;
+  color: $color;
+}
+
+// Sets width and height, with 'px' as the default unir
+@mixin wh($width, $height: null, $max-w: null, $max-h: null, $min-w: null, $min-h: null) {
+  width: $width;
+  height: $height;
+  max-width: $max-w;
+  min-width: $min-w;
+  max-height: $max-h;
+  min-height: $min-h;
+}
+
+// Sets position, coordinates and z-index value.
+// Defaults to position: absolute
+@mixin pos($top: null, $right: null, $bottom: null, $left: null, $pos: absolute, $z: null) {
+  position: $pos;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  z-index: $z;
+}
+
+// Sets display to flex, and assigns other properties
+@mixin flex($justify: null, $align: null, $dir: null, $dis: true) {
+  @if $dis {
+    display: flex;
+  }
+
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Sets display to grid and assigns other properties
+@mixin grid($cols: null, $rows: null, $gap: 30px, $justify: null, $align: null) {
+  display: grid;
+  grid-gap: $gap;
+  grid-template-columns: $cols;
+  grid-template-rows: $rows;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Sets a min-width media query
+@mixin mq-min($size) {
+  @media (min-width: $size+"px") {
+    @content;
+  }
+}
+
+// Sets a max-width media query
+@mixin mq-max($size) {
+  @media (max-width: $size+"px") {
+    @content;
+  }
+}

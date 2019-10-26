@@ -1,0 +1,31 @@
+title: ByVasco – Designer and Developer for the web
+email: madebyvasco@gmail.com
+description:
+baseurl: ""
+url: "https://byvasco.com"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+
+collections_dir: collections
+
+collections:
+  posts:
+    output: true
+    permalink: /:title
+    sort_by: date
+  
+  pages:
+    output: true
+    permalink: /:title
+  
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

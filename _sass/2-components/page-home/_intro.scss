@@ -1,0 +1,21 @@
+/**
+ * Components / Page - Home
+ * Intro
+ */
+
+.intro {
+  .grid-2 {
+    grid-template-columns: $col-3 $col-7;
+  }
+
+  &-content {
+    p {
+      max-width: $col-5;
+      @extend .body-large;
+    }
+
+    p + p {
+      margin-top: 24px;
+    }
+  }
+}

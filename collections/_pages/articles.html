@@ -1,0 +1,14 @@
+---
+page_intro: Writing about my thoughts, ideas and projects.
+---
+
+<section class="articles">
+  <div class="container-narrow">
+    {% for article in site.posts %}
+    <article class="article-preview">
+      <a href="{{ article.url }}" class="article-title body-large">{{ article.title }}</a>
+      <time class="article-title label">{{ article.date | date: "%B %d, %Y" }}</time>
+    </article>
+    {% endfor %}
+  </div>
+</section>

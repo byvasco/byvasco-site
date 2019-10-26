@@ -1,0 +1,34 @@
+{%- capture main_class -%}
+  {%- if page.url == "/" -%}
+    page-home
+  {%- elsif layout.page_title -%}
+    page-{{ layout.page_title | downcase}}
+  {%- elsif page.title -%}
+    page-{{ page.title | downcase}}
+  {%- elsif layout.title -%}
+    page-{{ layout.title | downcase}}
+  {%- else -%}
+    page
+  {%- endif -%}
+{%- endcapture -%}
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include doc/head.html %}
+
+  <body>
+    <main class="{{main_class}}">
+      {% include structure/header.html %}
+      {{content}}
+      {% include structure/footer.html %}
+    </main>
+    
+    {% if page.custom_js %}
+      {% for js in page.custom_js %}
+        {% capture src %}/assets/javascript/{{ js }}{% endcapture %}
+
+        <script src="{{ src }}"></script>
+      {% endfor %}
+    {% endif %}
+  </body>
+</html>
