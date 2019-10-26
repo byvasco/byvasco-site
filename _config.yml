@@ -13,7 +13,7 @@ plugins:
 collections_dir: collections
 
 collections:
-  posts:
+  articles:
     output: true
     permalink: /:title
     sort_by: date
@@ -29,3 +29,9 @@ defaults:
       type: "pages"
     values:
       layout: "page"
+  -
+    scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"

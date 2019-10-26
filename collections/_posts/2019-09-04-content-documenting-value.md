@@ -1,10 +1,6 @@
 ---
-layout: article
-
 title: Creating content, documenting and giving value
 image-dir: content-documenting-value
-
-permalink: /articles/:title
 
 categories: Personal
 ---

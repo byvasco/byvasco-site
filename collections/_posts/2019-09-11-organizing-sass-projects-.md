@@ -1,10 +1,6 @@
 ---
-layout: article
-
 title:  How I organize Sass projects
 image-dir: organizing-sass-projects
-
-permalink: /articles/:title
 
 categories: Development
 ---
