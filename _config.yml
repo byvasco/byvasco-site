@@ -30,7 +30,7 @@ defaults:
     layout: article
 email: madebyvasco@gmail.com
 description: 
-baseurl: ''
+baseurl: 
 url: https://byvasco.com
 markdown: kramdown
 plugins:
