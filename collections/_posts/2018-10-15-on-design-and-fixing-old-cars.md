@@ -1,10 +1,8 @@
 ---
-title: On Design and Fixing Old Cars
-date: 2018-10-15 00:00:00 Z
-categories:
-- collections
-- Design
-image-dir: On Design and Fixing Old Cars
+title: "On Design and Fixing Old Cars"
+image-dir: "On Design and Fixing Old Cars"
+
+categories: Design
 ---
 
 So my car just broke something while I was driving — I’m literally writing this while on the side of a highway waiting for the tow truck to arrive, and I thought it would be a perfect time to write this article.

@@ -1,11 +1,10 @@
 ---
 title: Creating content, documenting and giving value
-date: 2019-09-04 00:00:00 Z
-categories:
-- collections
-- Personal
 image-dir: content-documenting-value
+
+categories: Personal
 ---
+
 
 I’ve been somewhat thoughtful and slightly overthinking the topic of creating content, and building a personal brand for myself.
 

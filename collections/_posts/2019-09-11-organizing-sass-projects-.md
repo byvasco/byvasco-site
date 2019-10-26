@@ -1,10 +1,8 @@
 ---
-title: How I organize Sass projects
-date: 2019-09-11 00:00:00 Z
-categories:
-- collections
-- Development
+title:  How I organize Sass projects
 image-dir: organizing-sass-projects
+
+categories: Development
 ---
 
 These last few days I’ve been busy working on cleaning all the stylesheets from the [H19](https://hole19golf.com) website. It may seem tedious and boring but I’m actually enjoying it, I like the idea of transforming chaos into order.
