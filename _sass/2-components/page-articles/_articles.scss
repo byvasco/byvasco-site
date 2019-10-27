@@ -6,8 +6,11 @@
 .articles {
   padding-bottom: 140px;
   
+  .grid {
+    @include grid(1fr, $gap: 72px);
+  }
+  
   .article-preview {
-    padding: 32px 0;
-    @include grid(1fr, $gap: 12px);  
+    @include grid(1fr, $gap: 16px);
   }
 }

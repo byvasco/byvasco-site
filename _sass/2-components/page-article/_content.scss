@@ -1,0 +1,108 @@
+/**
+ * Components / Page - Article
+ * Content
+ */
+
+.article-content {
+  p {
+    & + p {
+      margin-top: 16px;
+    }
+
+    & + h3 {
+      margin-top: 80px;
+    }
+
+    & + h4 {
+      margin-top: 64px;
+    }
+  }
+
+  h3 {
+    @extend .title-3;
+
+    & + p {
+      margin-top: 20px;
+    }
+  }
+
+  h4 {
+    @extend .title-4;
+
+    & + p {
+      margin-top: 20px;
+    }
+  }
+
+  figure {
+    width: calc(100% + 160px);
+    margin: 40px 0;
+    margin-left: -80px;
+
+    img {
+      margin-bottom: -10px;
+    }
+
+    figcaption {
+      text-align: center;
+    }
+
+    & + h3 {
+      margin-top: 80px;
+    }
+  }
+
+  ul,
+  ol,
+  li {
+    list-style: initial;
+  }
+
+  ul,
+  ol {
+    padding-left: 32px;
+    margin: 20px 0;
+
+    li {
+      line-height: 28px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+  }
+
+  code {
+    padding: 2px 6px 4px;
+    margin: 0 2px;
+  }
+
+  hr {
+    margin: 48px 0;
+    border: 0;
+    border-top: 1px solid get-color(border, primary);
+  }
+
+  .iframe-container {
+    position: relative;
+    width: calc(100% + 160px);
+    padding-bottom: 81%;
+    margin: 72px 0 72px -80px;
+
+    iframe {
+      @include pos();
+      @include wh(100%, 100%);
+    }
+  }
+
+  blockquote {
+    margin: 48px auto;
+    padding: 0 30px;
+
+    p {
+      @extend .body-large;
+      text-align: center; 
+      font-weight: 500;
+    }
+  }
+}

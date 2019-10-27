@@ -23,10 +23,13 @@ $colors: (
   ),
   text: (
     primary: #232036,
-    light: #7E8188
+    light: #787B83
   ),
   accent: (
     primary: #0F4BF1
+  ),
+  border: (
+    primary: #F0F0F0
   )
 );
 
@@ -35,6 +38,9 @@ $container-width: 996px;
 $container-padding: 30px;
 $column-width: 72px;
 $gap-width: 30px;
+
+$col-1: $column-width;
+$col-2: ($column-width * 2) + ($gap-width * 1);
 $col-3: ($column-width * 3) + ($gap-width * 2);
 $col-4: ($column-width * 4) + ($gap-width * 3);
 $col-5: ($column-width * 5) + ($gap-width * 4);

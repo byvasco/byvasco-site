@@ -3,6 +3,8 @@
     page-home
   {%- elsif layout.page_title -%}
     page-{{ layout.page_title | downcase}}
+  {%- elsif page.page_title -%}
+    page-{{ page.page_title | downcase}}
   {%- elsif page.title -%}
     page-{{ page.title | downcase}}
   {%- elsif layout.title -%}
@@ -16,12 +18,13 @@
 <html lang="en">
   {% include doc/head.html %}
 
-  <body>
-    <main class="{{main_class}}">
+    <main class="{{ main_class }}">
       {% include structure/header.html %}
       {{content}}
       {% include structure/footer.html %}
     </main>
+
+    <script src="/assets/javascript/main.js"></script>
     
     {% if page.custom_js %}
       {% for js in page.custom_js %}

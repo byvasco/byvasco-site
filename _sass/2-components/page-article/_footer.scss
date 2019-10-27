@@ -1,0 +1,16 @@
+/**
+ * Components / Page - Article
+ * Footer
+ */
+
+.article-footer {
+  padding: 64px 0 40px;
+
+  .grid {
+    row-gap: 120px;
+  }
+
+  .back {
+    justify-self: center;
+  }
+}
