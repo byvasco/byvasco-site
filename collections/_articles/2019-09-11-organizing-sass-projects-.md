@@ -1,8 +1,7 @@
 ---
-title:  How I organize Sass projects
-date: 2019-09-11
+title: How I organize Sass projects
+date: 2019-09-11 00:00:00 Z
 image-dir: organizing-sass-projects
-
 categories: Development
 ---
 

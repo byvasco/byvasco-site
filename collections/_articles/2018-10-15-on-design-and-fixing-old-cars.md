@@ -1,8 +1,7 @@
 ---
-title: "On Design and Fixing Old Cars"
-date: 2018-10-15
-image-dir: "On Design and Fixing Old Cars"
-
+title: On Design and Fixing Old Cars
+date: 2018-10-15 00:00:00 Z
+image-dir: On Design and Fixing Old Cars
 categories: Design
 ---
 
