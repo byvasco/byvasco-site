@@ -16,6 +16,10 @@
     @include font(24, 40, -0.52, $weight-text);
   }
 
+  &-large-2 {
+    @include font(20, 36, -0.33, $weight-text);
+  }
+
   &-small {
     @include font(17, 28, 0);
   }

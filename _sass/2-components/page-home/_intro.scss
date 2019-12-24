@@ -17,11 +17,12 @@
     }
 
     .text {
-      margin-bottom: 32px;
+      margin-bottom: 16px;
     }
 
     .social-links {
       @include flex();
+      margin-top: 48px;
 
       .social {
         display: block;
