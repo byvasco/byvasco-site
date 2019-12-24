@@ -22,7 +22,7 @@ $colors: (
     black: #000
   ),
   text: (
-    primary: #232036,
+    primary: #1A1D20,
     light: #787B83
   ),
   accent: (
@@ -47,7 +47,9 @@ $col-5: ($column-width * 5) + ($gap-width * 4);
 $col-6: ($column-width * 6) + ($gap-width * 5);
 $col-7: ($column-width * 7) + ($gap-width * 6);
 $col-8: ($column-width * 8) + ($gap-width * 7);
+$col-10: ($column-width * 10) + ($gap-width * 9);
 
 // Fonts
-$font-main: "Inter", system-ui, sans-serif;
+$font-main: iav, ia, inter,system-ui, sans-serif;
 $font-secondary: "Roboto Mono", monospace;
+$weight-text: 450;

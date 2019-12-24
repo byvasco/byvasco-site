@@ -9,7 +9,6 @@
   outline: none;
   -webkit-tap-highlight-color: transparent;
   color: get-color(text, primary);
-  font-family: $font-main;
   box-sizing: border-box;
 }
 
@@ -18,8 +17,10 @@ html {
 }
 
 body {
- -webkit-font-smoothing: antialiased;
- overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  font-family: $font-main;
+  font-weight: $weight-text;
 }
 
 img {

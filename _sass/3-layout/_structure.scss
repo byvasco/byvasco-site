@@ -12,7 +12,7 @@
 
   &-narrow {
     @extend .container;
-    max-width: calc(#{$col-8} + #{$container-padding * 2});
+    max-width: calc(#{$col-10} + #{$container-padding * 2});
   }
 
   &-small {

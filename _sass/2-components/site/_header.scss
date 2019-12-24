@@ -4,53 +4,9 @@
  */
 
 .header-main {
-  padding: 80px 0;
+  padding: 140px 0;
 
   .menu-main {
     justify-self: end;
-  }
-
-  .menu-link {
-    text-decoration: none;
-
-    &:hover {
-      opacity: .6;
-    }
-  }
-
-  .home-link {
-    position: relative;
-
-    &::before,
-    &::after {
-      content: '';
-      display: block;
-      background-color: black;
-    }
-
-    &::before {
-      @include wh(95px, 2px);
-      @include pos($bottom: 4px);
-    }
-
-    &::after {
-      @include wh(8px, 2px);
-      @include pos($left: 106px, $bottom: 4px);
-      transition: all 120ms;
-    }
-
-    &:hover {
-      opacity: 1;
-      color: get-color(accent, primary);
-
-      &::after {
-        @include wh(30px, 2px);
-      }
-
-      &::after,
-      &::before {
-        background-color: get-color(accent, primary);
-      }
-    }
   }
 }

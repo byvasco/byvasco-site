@@ -13,7 +13,7 @@
   }
 
   &-large {
-    @include font(24, 44, 0);
+    @include font(24, 40, -0.52, $weight-text);
   }
 
   &-small {
