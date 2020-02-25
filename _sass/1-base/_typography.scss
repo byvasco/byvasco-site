@@ -5,23 +5,23 @@
 
 // Body
 .body {
-  @include font(18, 34, -0.01);
+  @include font(18, 32, -0.31);
 
   &-long {
-    @extend .body;
-    line-height: 34px;
+    @include font(18, 34, -0.37);
   }
 
   &-large {
     @include font(24, 40, -0.52, $weight-text);
   }
 
-  &-large-2 {
-    @include font(20, 36, -0.33, $weight-text);
-  }
-
   &-small {
     @include font(17, 28, 0);
+  }
+
+  &-bold {
+    @extend .body;
+    font-weight: 650;
   }
 }
 
@@ -91,7 +91,7 @@ a {
   }
 
   &-3 {
-    @include font(32, 44, 0, 800);
+    @include font(26, 40, -0.3, 450);
   }
 
   &-4 {

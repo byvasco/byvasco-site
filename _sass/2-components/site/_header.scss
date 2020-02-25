@@ -9,4 +9,9 @@
   .menu-main {
     justify-self: end;
   }
+
+  .profile-image {
+    @include pos(-140px, 0);
+    max-width: $col-3;
+  }
 }
