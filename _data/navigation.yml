@@ -3,11 +3,3 @@ docs:
 - title: Articles
   url: /articles
   show: true
-
-- title: Work
-  url: /work
-  show: true
-
-- title: References
-  url: /references
-  show: true

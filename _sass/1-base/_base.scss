@@ -21,6 +21,27 @@ body {
   overflow-x: hidden;
   font-family: $font-main;
   font-weight: $weight-text;
+  // animation: fadeIn .6s ease-in;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
 }
 
 img {

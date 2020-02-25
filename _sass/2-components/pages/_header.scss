@@ -4,5 +4,9 @@
  */
 
 .page-header {
-  padding: 120px 0 130px;
+  padding-bottom: 120px;
+
+  .intro {
+    max-width: $col-4;
+  }
 }

@@ -32,26 +32,14 @@ p {
     font-weight: 500;
 
     &:hover {
-      color: get-color(accent, primary);
+      color: white;
+      background: get-color(accent, primary);
     }
   }
 }
 
-a {
-  transition: all 90ms;
+a {  
   
-  &.external {
-    @include flex($align: center);
-
-    &::after {
-      content: '';
-      display: block;
-      @include wh(24px, 24px);
-      @include background('/assets/images/icons/icon-external-link.svg');
-      margin-left: 4px;
-    }
-  }
-
   &.back {
     @include flex($align: center);
 
@@ -111,12 +99,16 @@ li {
 }
 
 // Modifiers
-.-heavy {
-  font-weight: 600;
+.text-heavy {
+  font-weight: 650;
 }
 
-.-light {
+.text-light {
   color: get-color(text, light);
+}
+
+.text-lighter {
+  color: get-color(text, lighter);
 }
 
 // Other
