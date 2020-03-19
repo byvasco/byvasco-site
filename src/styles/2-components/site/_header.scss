@@ -1,0 +1,44 @@
+/**
+ * Components / Site
+ * Header
+ */
+
+.header-main {
+  padding: 120px 0;
+
+  .menu-main {
+    justify-self: end;
+  }
+
+  .profile-image {
+    @include pos(-140px, 0);
+    max-width: $col-3;
+  }
+
+  .menu-link {
+    text-decoration: none;
+
+    &:hover {
+      color: get-color(text, light);
+    }
+
+    & + .menu-link {
+      margin-left: 32px;
+    }
+  }
+
+  @include mq-max(830) {
+    .profile-image {
+      max-width: 220px;
+    }
+  }
+
+  @include mq-max(440) {
+    padding: 64px 0;
+    
+    .profile-image {
+      position: initial;
+      margin-top: 64px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: byvasco/byvasco-site
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime }
+      - { name: path, label: Path }
+      - { name: body, label: Body, widget: markdown }

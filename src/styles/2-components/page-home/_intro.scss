@@ -1,0 +1,20 @@
+/**
+ * Components / Page - Home
+ * Intro
+ */
+
+.intro {
+  .title {
+    margin-bottom: 16px;
+    max-width: 460px;
+  }
+
+  p {
+    max-width: $col-5;
+    @extend .body-long;
+  }
+
+  p + p {
+    margin-top: 12px;
+  }
+}
